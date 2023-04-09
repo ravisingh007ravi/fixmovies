@@ -5,6 +5,9 @@ const Auth = () => {
 
     const [email, setEmail] = useState('')
     const [userName, setUserName] = useState('')
+    const [password, setPassword] = useState('')
+
+
 
 
 
@@ -22,34 +25,34 @@ const Auth = () => {
 
                             <Input
                                 label='UserName'
-                                onChange={(e:any) => setUserName(e.target.value)}
-                                id="email"
-                                type="UserName"
+                                onChange={(e: any) => setUserName(e.target.value)}
+                                id="userName"
+                                type="text"
                                 value={userName}
                             />
 
                             <Input
                                 label='Email'
-                                onChange={(e:any) => setEmail(e.target.value)}
+                                onChange={(e: any) => setEmail(e.target.value)}
                                 id="email"
-                                type="email"
+                                type="text"
                                 value={email}
                             />
 
                             <Input
                                 label='Password'
-                                onChange={(e:any) => setEmail(e.target.value)}
-                                id="email"
+                                onChange={(e: any) => setPassword(e.target.value)}
+                                id="password"
                                 type="Password"
-                                value={email}
+                                value={password}
                             />
 
                         </div>
-                        
+
                         <button className='bg-red-600 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700 trasition'>
                             Login
                         </button >
-                        <p className="text-neutral-500" mt-12>
+                        <p className="text-neutral-500 mt-12">
                             First time using FIXMOVIES ?
                             <span className='text-white ml-1 hover:underline cursor-pointer'>
                                 Create account
